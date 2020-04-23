@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    android:orientation="horizontal"
+    >
+
+    <com.example.cubaud.cubaud.GameView
+        android:id="@+id/gameView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="40dp"
+        />
+
+    <!--
+    TEL
+       <com.example.cubaud.cubaud.GameView
+        android:id="@+id/gameView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="40dp"/>
+    -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="300dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bestscore"
+            android:text=""
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            />
+
+        <TextView
+            android:id="@+id/score"
+            android:textSize="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+        <Button
+            android:layout_marginLeft="00dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="RESET"
+            android:onClick="onClickReset"
+            android:textColor="#d3d3d3"
+            android:background="#256"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#256"
+            android:onClick="onClickBack"
+            android:text="BACK"
+            android:textColor="#d3d3d3"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ? "
+        android:textColor="#e0fff0"
+        android:id="@+id/rules"
+        android:onClick="onClickRule"
+        android:layout_marginTop="10dp"
+        android:background="#256"
+    />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string-array name="item_array">
+        <item> CLICK </item>
+        <item>Niveau 1</item>
+        <item>Niveau 2</item>
+        <item>Niveau 3</item>
+    </string-array>
+
+</resources>
+
